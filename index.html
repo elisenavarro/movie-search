@@ -2,15 +2,20 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Playground - JavaScript 101</title>
+    <title>Movie Search</title>
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   </head>
   <body>
-    <p style="margin-top: 40vh; text-align: center; font: normal 24px monospace;">
-      Open the console 🤓
-    </p>
-
-    <!-- Add some HTML in here -->
-
+ <!--    <input type="text" id="search"> -->
+    <div class="container text-center">
+      <h2>Movie Finder</h2>
+      <form class="form-inline" id="search-form">
+        <input type="text" class="form-control" placeholder="Find a movie" id="search-input">
+        <input type="submit" class="btn btn-primary">
+      </form>
+      <ul id="results" class="list-inline"></ul>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
