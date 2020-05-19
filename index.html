@@ -12,12 +12,20 @@
         <h2 class="title mb-4">Movie Finder</h2>
         <form class="d-inline-flex pb-2" id="search-form">
           <input type="text" class="form-control" placeholder="Find a movie" id="search-input">
-          <input type="submit" class="btn btn-primary ml-1">
+          <input type="submit" class="btn btn-info btn-md ml-1">
         </form>
-       </div>
+      </div>
       <ul id="results" class="list-inline"></ul>
     </div>
     <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#myBtn").click(function(){
+          $("#myModal").modal();
+        });
+      });
+    </script>
   </body>
 </html>
