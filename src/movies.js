@@ -4,9 +4,11 @@ const list = document.querySelector('#results');
 const insertMovies = (data) => {
   data.results.forEach((result) => {
     // Select the search input value 'data' call 'result' object
-    const movie = `<li>
-      <h3>${result.title}</h3>
-      <p>${result.release_date}</p>
+    const movie = `<li class="border-bottom mt-4">
+      <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2${result.poster_path}" alt="" class="rounded"/>
+      <h3 class="m-2 font-weight-bold">${result.title}</h3>
+      <p class="text-black-50">${result.release_date}</p>
+      <p class="mb-4">${result.overview}</p>
       </li>`;
     list.insertAdjacentHTML('beforeend', movie);
   });
@@ -28,4 +30,4 @@ const updateSearch = (event) => {
   fetchMovies(input.value); // GET value of search-input and run fetchMovies
 };
 
-export { fetchMovies, updateSearch };
+export { fetchMovies, updateSearch, insertMovies };
