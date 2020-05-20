@@ -1,7 +1,7 @@
 ## Movie Finder
 
-A simple UI for searching themoviedb.org's API.
-Started from https://github.com/lewagon/webpack-boilerplate
+A simple UI for searching themoviedb.org's API.<br/>
+Started from https://github.com/lewagon/webpack-boilerplate<br/>
 All project source code is contained in the ./src/ directory
 
 User Experience
