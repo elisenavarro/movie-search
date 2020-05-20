@@ -10,3 +10,4 @@ User Experience
 - User can select a movie from a list of options that match user's search
 - User can select a movie from the list to see more details about the movie
 
+![Preview](lib/movie-finder.png)
