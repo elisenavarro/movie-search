@@ -1,25 +1,12 @@
-## Usage
+## Movie Finder
 
-First clone this repository to your laptop. You must have Node (> v4) and [yarn](https://yarnpkg.com/lang/en/docs/install/) installed.
+A simple UI for searching themoviedb.org's API.
+Started from https://github.com/lewagon/webpack-boilerplate
+All project source code is contained in the ./src/ directory
 
-```bash
-cd ~/code/<your_github_nickname>
-git clone git@github.com:lewagon/webpack-boilerplate.git my-js-project
-cd my-js-project
-rm -rf .git
-yarn install
-stt # Open this folder in Sublime Text
-```
+User Experience
 
-Make sure you have `./node_modules/.bin` in your `$PATH`! This way you can run this:
+- User can search for a movie
+- User can select a movie from a list of options that match user's search
+- User can select a movie from the list to see more details about the movie
 
-```bash
-eslint lib
-webpack-dev-server
-```
-
-Once a file has been updated in Sublime, you can run it with:
-
-```bash
-node lib/01_types.js
-```

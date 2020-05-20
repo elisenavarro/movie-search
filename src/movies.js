@@ -6,7 +6,7 @@ const insertMovies = (data) => {
     // Select the search input value 'data' call 'result' object
     const movie =
       `<li class="border-bottom p-4">
-       <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2${result.poster_path}" alt="" class="rounded"/>
+      <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2${result.poster_path}" alt="" class="rounded"/>
       <h3 class="m-2 font-weight-bold">${result.title}</h3>
       <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">More Info</button>
         <div class="modal fade" id="myModal" role="dialog">
