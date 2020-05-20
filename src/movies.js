@@ -4,11 +4,27 @@ const list = document.querySelector('#results');
 const insertMovies = (data) => {
   data.results.forEach((result) => {
     // Select the search input value 'data' call 'result' object
-    const movie = `<li class="border-bottom mt-4">
-      <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2${result.poster_path}" alt="" class="rounded"/>
+    const movie =
+      `<li class="border-bottom p-4">
+       <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2${result.poster_path}" alt="" class="rounded"/>
       <h3 class="m-2 font-weight-bold">${result.title}</h3>
-      <p class="text-black-50">${result.release_date}</p>
-      <p class="mb-4">${result.overview}</p>
+      <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">More Info</button>
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header" style="display: block" >
+                <h4 class="modal-title">${result.title}</h4>
+              </div>
+              <div class="modal-body">
+                <p class="text-black-50 col">Release Date: ${result.release_date}</p>
+                <p class="font-italic">${result.overview}</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </li>`;
     list.insertAdjacentHTML('beforeend', movie);
   });
